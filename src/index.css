@@ -82,6 +82,9 @@ body {
   padding: 1rem;
   text-align: left;
   box-shadow: var(--shadow-2);
+
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .author {
   font-style: italic;
