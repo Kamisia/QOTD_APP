@@ -7,7 +7,7 @@ const Sentence = () => {
   }
   return (
     <div className="sentence-container">
-      <h1 className="quote">"{quote}"</h1>
+      <h1 className="quote">&bdquo;{quote}&rdquo;</h1>
       <h3 className="author">~{author}</h3>
     </div>
   );
