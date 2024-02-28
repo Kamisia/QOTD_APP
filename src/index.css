@@ -76,7 +76,7 @@ body {
 .sentence-container {
   border: 1px solid var(--detail-color);
   border-radius: 8px;
-  width: 50%;
+  max-width: 600px;
   color: var(--black-color);
   background-color: var(--detail-color-rgba);
   padding: 1rem;
@@ -91,4 +91,37 @@ body {
 }
 .quote {
   font-weight: 300;
+}
+/*Loader*/
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--white-color);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: var(--detail-color) transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
