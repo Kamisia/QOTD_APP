@@ -1,0 +1,62 @@
+:root {
+  /*colors*/
+  --black-color: #060200;
+  --light-color: #cbbbd2;
+  --white-color: #fdfcfd;
+  --light-gray-color: #9e97a8;
+  --grey-color: #918c9a;
+  --dark-color: #251b4d;
+  --main-color: #6c4e8e;
+  --detail-color: #be8895;
+
+  --transition: 0.3s ease-in-out all;
+
+  /*shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 240px;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+/*BUTTON*/
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 100px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: var(--shadow-2);
+}
+
+/*SENTENCE*/
