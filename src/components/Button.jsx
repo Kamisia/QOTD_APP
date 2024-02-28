@@ -1,10 +1,10 @@
 import { useGlobalContext } from "../Context";
 
 const Button = () => {
-  const { handleClick, isOpen } = useGlobalContext;
+  const { handleClick } = useGlobalContext();
   return (
     <div>
-      <button onClick={handleClick} className="btn">
+      <button className="btn" onClick={handleClick}>
         Your Quote Of The Day
       </button>
     </div>
