@@ -3,7 +3,7 @@ import { useGlobalContext } from "../Context";
 const Sentence = () => {
   const { quote, author } = useGlobalContext();
   if (quote == "") {
-    return <span class="loader"></span>;
+    return <span className="loader"></span>;
   }
   return (
     <div className="sentence-container">
