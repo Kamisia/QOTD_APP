@@ -6,6 +6,7 @@ export const AppProvider = ({ children }) => {
   ///FetchData
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -21,9 +22,12 @@ export const AppProvider = ({ children }) => {
   }, []);
 
   //obsługa przycisku
-
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(true);
+  };
   return (
-    <AppContext.Provider value={{ quote, author }}>
+    <AppContext.Provider value={{ quote, author, handleClick, isOpen }}>
       {children}
     </AppContext.Provider>
   );

@@ -7,7 +7,9 @@
   --grey-color: #918c9a;
   --dark-color: #251b4d;
   --main-color: #6c4e8e;
+  --main-color-rgba: rgba(108, 78, 142, 0.5);
   --detail-color: #be8895;
+  --detail-color-rgba: rgba(190, 136, 149, 0.5);
 
   --transition: 0.3s ease-in-out all;
 
@@ -57,6 +59,36 @@ body {
   border-radius: 8px;
   border: none;
   box-shadow: var(--shadow-2);
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid var(--white-color);
+
+  color: var(--white-color);
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: var(--main-color-rgba);
+  color: var(--white-color);
+  border: none;
 }
 
 /*SENTENCE*/
+.sentence-container {
+  border: 1px solid var(--detail-color);
+  border-radius: 8px;
+  width: 50%;
+  color: var(--black-color);
+  background-color: var(--detail-color-rgba);
+  padding: 1rem;
+  text-align: left;
+  box-shadow: var(--shadow-2);
+}
+.author {
+  font-style: italic;
+  font-weight: 200;
+  color: var(--dark-color);
+  text-align: right;
+}
+.quote {
+  font-weight: 300;
+}
