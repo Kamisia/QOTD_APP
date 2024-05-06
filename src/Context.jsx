@@ -7,10 +7,6 @@ export const AppProvider = ({ children }) => {
   const [author, setAuthor] = useState("");
   const [showSentence, setShowSentence] = useState(false);
 
-  const handleClick = () => {
-    setShowSentence(true);
-  };
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,7 +25,9 @@ export const AppProvider = ({ children }) => {
   }, [showSentence]);
 
   return (
-    <AppContext.Provider value={{ quote, author, handleClick, showSentence }}>
+    <AppContext.Provider
+      value={{ quote, author, handleClick, showSentence, setShowSentence }}
+    >
       {children}
     </AppContext.Provider>
   );
