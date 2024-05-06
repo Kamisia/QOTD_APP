@@ -26,7 +26,7 @@ export const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ quote, author, handleClick, showSentence, setShowSentence }}
+      value={{ quote, author, showSentence, setShowSentence }}
     >
       {children}
     </AppContext.Provider>
