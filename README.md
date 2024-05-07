@@ -59,7 +59,3 @@ After launching the application and clicking the button, a random quote will app
 ## Author
 
 The project was created by [Kamila Samczuk](https://github.com/Kamisia).
-
-## License
-
-This project is licensed under the [MIT License](https://github.com/Kamisia/QOTD_APP/blob/main/LICENSE).
