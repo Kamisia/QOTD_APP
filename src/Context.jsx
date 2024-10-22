@@ -10,7 +10,7 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://api.quotable.io/random");
+        const response = await axios.get("http://api.quotable.io/quotes/random");
         setQuote(response.data.content);
 
         setAuthor(response.data.author);
